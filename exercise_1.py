@@ -11,4 +11,6 @@ print("Die Reibkraft beträgt: ", Fr)
 Fl = c*A*p*v*v*0.5
 print("Der Luftwiderstand beträgt: ", Fl)
 W = (Fr + Fl) * v
-print("Die verbarauchte Energie beträgt: ", W)
+print("Die verbarauchte Energie beträgt: ", W," Watt")
+W1 = W/1000
+print("Und das ganze in Kilowatt: ", W1)
