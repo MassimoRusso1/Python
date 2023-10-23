@@ -31,6 +31,9 @@ elif vehicle == "car4":
     u = 0.02
     c = 0.19
     A = 3.0
+else:
+    print("Fahrzeug nicht gefunden!")
+    exit()
 
 # Konstanten
 g = 9.81
@@ -45,7 +48,7 @@ v = float(input("Geschwindigkeit in km/h: "))
 v = v/3.6
 
 # Berechnungen
-p = d/(287.058*(T+273.15))	
+p = d/(287.058*(T+273.15))
 Fr = m * g * u  
 Fl = c*A*p*v*v*0.5 
 W = (Fr + Fl) * v 
