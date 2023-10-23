@@ -54,3 +54,7 @@ Fl = c*A*p*v*v*0.5
 W = (Fr + Fl) * v 
 W1 = W/1000 
 print("Verbrauch in Kilowatt pro Fahrzeug: ", W1)
+if W1 >= 10:
+    print("Ihr Fahrzeug ist nicht effizient")
+else:
+    print("Ihr Fahrzeug ist effizient")
