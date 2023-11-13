@@ -19,7 +19,6 @@ def create_fleet():
 
 
 def get_user_input():
-    # Eingabe
     print("Wie hoch ist der Luftdruck?")
     d = float(input("Luftdruck in hPa: "))
     print("Wie hoch ist die Temperatur?")
@@ -40,6 +39,7 @@ def calculate_consumption(m, u, c, a, d, T, v):
     W1 = W / 1000
     return W1
 
+
 def main():
     fleet_list = create_fleet()
 
@@ -51,12 +51,15 @@ def main():
     vehicle = input("Fahrzeug: ")
 
     d, T, v = get_user_input()
-    selected_car = next(car for car in fleet_list if car.name.lower() == vehicle.lower())
-    W1 = calculate_consumption(selected_car.m, selected_car.u, selected_car.c, selected_car.a, d, T, v)
+    selected_car = next(
+        car for car in fleet_list if car.name.lower() == vehicle.lower())
+    W1 = calculate_consumption(
+        selected_car.m, selected_car.u, selected_car.c, selected_car.a, d, T, v)
 
     print("Verbrauch in Kilowatt pro Fahrzeug: ", W1)
     if W1 >= 10:
         print("Ihr Fahrzeug ist nicht effizient")
     else:
         print("Ihr Fahrzeug ist effizient")
-
+    if __name__ == "__main__":
+        main()
