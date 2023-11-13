@@ -49,10 +49,10 @@ v = v/3.6
 
 # Berechnungen
 p = d/(287.058*(T+273.15))
-Fr = m * g * u  
-Fl = c*A*p*v*v*0.5 
-W = (Fr + Fl) * v 
-W1 = W/1000 
+Fr = m * g * u
+Fl = c*A*p*v*v*0.5
+W = (Fr + Fl) * v
+W1 = W/1000
 print("Verbrauch in Kilowatt pro Fahrzeug: ", W1)
 if W1 >= 10:
     print("Ihr Fahrzeug ist nicht effizient")
