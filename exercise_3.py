@@ -47,7 +47,7 @@ def main():
     for car in fleet_list:
         print(car)
 
-    print("Wählen Sie ein Fahrzeug aus: (car1, car2, car3, car4 als Eingabe)")
+    print("Wählen Sie ein Fahrzeug aus: (Name als Eingabe)")
     vehicle = input("Fahrzeug: ")
 
     d, T, v = get_user_input()
