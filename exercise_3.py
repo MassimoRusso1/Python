@@ -61,5 +61,7 @@ def main():
         print("Ihr Fahrzeug ist nicht effizient")
     else:
         print("Ihr Fahrzeug ist effizient")
-    if __name__ == "__main__":
-        main()
+
+
+if __name__ == "__main__":
+    main()
